@@ -68,10 +68,10 @@
                 </li>
                 <li class="nav-header">FARMASI</li>
                 <li class="nav-item">
-                    <a href="" class="nav-link @if($menu == 'Pendaftaran' ) active @endif">
+                    <a href="{{ route('Layananresep') }}" class="nav-link @if($menu == 'Layanan Resep' ) active @endif">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Menu 1
+                            Layanan Resep
                         </p>
                     </a>
                 </li>
