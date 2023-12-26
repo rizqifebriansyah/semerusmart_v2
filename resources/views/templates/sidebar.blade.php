@@ -51,18 +51,18 @@
                 </li>
                 <li class="nav-header">ERM</li>
                 <li class="nav-item">
-                    <a href="" class="nav-link @if($menu == 'Pendaftaran' ) active @endif">
+                    <a href="{{ route('rmedokter') }}" class="nav-link @if($menu == 'RME DOKTER' ) active @endif">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Menu 1
+                            Assesment Dokter
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link @if($menu == 'Riwayat Pendaftaran' ) active @endif">
+                    <a href="{{ route('rmeperawat') }}" class="nav-link @if($menu == 'RME PERAWAT' ) active @endif">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Menu 2
+                            Assesment Perawat
                         </p>
                     </a>
                 </li>
