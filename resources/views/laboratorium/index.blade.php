@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">REKAMEDIS ELEKTRONIK DOKTER</h1>
+                <h1 class="m-0">LABORATORIUM</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <H5>Antrian Pasien</H5>
+                <H5>Antrian Pasien Laboratorium</H5>
                 <div class="v_a_p">
 
                 </div>
@@ -34,35 +34,35 @@
                             <td>1</td>
                             <td>AGYL PUTRA PRABOWO</td>
                             <td>
-                                <button class="badge badge-danger assesmendokter"> Belum Di Assesment </button>
+                                <button class="badge badge-danger detailorderlab"> Belum di Proses </button>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td> RABOWO</td>
                             <td>
-                                <button class="badge badge-danger assesmendokter"> Belum Di Assesment </button>
+                                <button class="badge badge-danger detailorderlab"> Belum di Proses </button>
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td> PUTRA </td>
                             <td>
-                                <button class="badge badge-danger assesmendokter"> Belum Di Assesment </button>
+                                <button class="badge badge-danger detailorderlab"> Belum di Proses </button>
                             </td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td> NINGSIH </td>
                             <td>
-                                <button class="badge badge-danger assesmendokter"> Belum Di Assesment </button>
+                                <button class="badge badge-danger detailorderlab"> Belum di Proses </button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-md-9">
-                <div class="form-ermnya">
+                <div class="form-lab">
 
                 </div>
             </div>
@@ -82,7 +82,7 @@
         });
     });
 
-    $(".assesmendokter").click(function() {
+    $(".detailorderlab").click(function() {
         spinner = $('#loader2');
         spinner.show();
     
@@ -94,14 +94,14 @@
 
 
             },
-            url: '<?= route('assesmendokter') ?>',
+            url: '<?= route('detailorderlab') ?>',
             error: function(data) {
                 spinner.hide();
                 alert('oke!!')
             },
             success: function(response) {
                 spinner.hide();
-                $('.form-ermnya').html(response);
+                $('.form-lab').html(response);
 
             }
         });

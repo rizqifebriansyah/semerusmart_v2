@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\FarmasiController;
 use App\Http\Controllers\DokterController;
+use App\Http\Controllers\LaboratoriumController;
 use App\Http\Controllers\PerawatController;
 
 
@@ -34,3 +35,8 @@ Route::post('assesmendokter', [DokterController::class, 'assesmendokter'])->midd
 //RME PERAWAT
 Route::get('rmeperawat', [PerawatController::class, 'index'])->middleware('guest')->name('rmeperawat');
 Route::post('assesmenperawat', [PerawatController::class, 'assesmenperawat'])->middleware('guest')->name('assesmenperawat');
+
+//penunjang
+Route::get('laboratorium', [LaboratoriumController::class, 'index'])->middleware('guest')->name('laboratorium');
+Route::post('detailorderlab', [LaboratoriumController::class, 'detailorderlab'])->middleware('guest')->name('detailorderlab');
+
