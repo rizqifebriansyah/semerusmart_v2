@@ -19,21 +19,30 @@
             </div>
         </div>
         <form action="post" class="form_assesment">
-            <div class="form-group">
-                <label for="inputAddress2">Keluhan Utama</label>
-                <textarea type="text" class="form-control" id="keluhanutama" name="keluhanutama" placeholder=""></textarea>
-            </div>
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                     <label for="inputEmail4">Tekanan Darah</label>
                     <input type="text" class="form-control" id="tekanandarah" name="tekanandarah" value="">
                     <input hidden type="text" class="form-control" id="kodekunjungan" name="kodekunjungan" value="">
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                     <label for="inputPassword4">Suhu Tubuh</label>
                     <input type="text" class="form-control" id="suhutubuh" name="suhutubuh" value="">
                 </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPassword4">Frekuensi Nadi</label>
+                    <input type="text" class="form-control" id="suhutubuh" name="suhutubuh" value="">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPassword4">Frekuensi Nafas</label>
+                    <input type="text" class="form-control" id="suhutubuh" name="suhutubuh" value="">
+                </div>
             </div>
+            <div class="form-group">
+                <label for="inputAddress2">Keluhan Utama</label>
+                <textarea type="text" class="form-control" id="keluhanutama" name="keluhanutama" placeholder=""></textarea>
+            </div>
+            
             <div class="form-group">
                 <label for="inputAddress2">Diagnosa</label>
                 <input type="text" class="form-control" id="diagnosa" name="diagnosa" placeholder="" value="">
